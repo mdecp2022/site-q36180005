@@ -130,7 +130,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li><a href='Brython.html'>Brython</a></li>
+                     <li><a href='About.html'>About</a><li class='has-children'><a href='HW.html'>HW</a><ul class='dropdown'><li><a href='W13.html'>W13</a></li></ul><li><a href='Brython.html'>Brython</a></li>
                       </ul>
                 </nav>
               </div>
@@ -141,7 +141,7 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">About << <a href='About.html'>Previous</a> <br /><h1>Brython</h1>
+    <div id="tipue_search_content">W13 << <a href='W13.html'>Previous</a> <br /><h1>Brython</h1>
 <p><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">https://en.wikipedia.org/wiki/Python_(programming_language)</a></p>
 <h4>Examples:</h4>
 <p style="padding-left: 30px;"><a href="https://gist.github.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d">https://gist.github.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d</a></p>
@@ -406,7 +406,22 @@ doc["aitetris"].bind("click", aitetris.do)
 <p><!-- add 1 to 100 part2 結束--></p>
 <!-- editor2 開始 -->
 <p><!-- 用來顯示程式碼的 editor 區域 --></p>
-<div id="kw_editor2" style="width: 600px; height: 300px;"></div>
+<div id="kw_editor2" style="width: 600px; height: 300px;">
+<div class="line number1 index0 alt2"><code class="py comments"></code></div>
+<div class="line number6 index5 alt1"><code class="py keyword">import</code> <code class="py plain">random</code></div>
+<div class="line number7 index6 alt2"><code class="py plain"></code></div>
+<div class="line number9 index8 alt2"><code class="py plain">url </code><code class="py keyword">=</code> <code class="py string">"https://nfu.cycu.org/?semester=1111&amp;courseno="</code> <code class="py keyword">+</code> <code class="py plain">cp1a </code><code class="py keyword">+</code> <code class="py string">"&amp;column=True"</code></div>
+<div class="line number10 index9 alt1"><code class="py comments"></code></div>
+<div class="line number15 index14 alt2"><code class="py plain">data </code><code class="py keyword">=</code> <code class="py functions">open</code><code class="py plain">(url).read().split(</code><code class="py string">"\n"</code><code class="py plain">)</code></div>
+<div class="line number17 index16 alt2"><code class="py comments">print(data[:-1])</code></div>
+<div class="line number17 index16 alt2"><code class="py comments"></code></div>
+<div class="line number18 index17 alt1"><code class="py comments"></code></div>
+<div class="line number21 index20 alt2"><code class="py plain">random.shuffle(<span>data[:-1]</span>)</code></div>
+<div class="line number22 index21 alt1"><code class="py plain">num </code><code class="py keyword">=</code> <code class="py value">5</code></div>
+<div class="line number24 index23 alt1"></div>
+<div class="line number25 index24 alt2"><code class="py keyword">for</code> <code class="py plain">i </code><code class="py keyword">in</code> <code class="py functions">range</code><code class="py plain">(num):</code></div>
+<div class="line number26 index25 alt1"><code class="py spaces">    </code><code class="py functions">print</code><code class="py plain">(stud[i])</code></div>
+</div>
 <p><!-- 以下的表單與按鈕與前面的 Javascript doSave 函式以及 FileSaver.min.js 互相配合 --></p>
 <p><!-- 存擋表單開始 --></p>
 <form><label>Filename: <input id="kw_filename2" placeholder="input file name" type="text"/>.py</label> <input onclick="doSave('kw_py_src2', 'kw_filename2');" type="submit" value="Save"/></form>
@@ -420,7 +435,7 @@ doc["aitetris"].bind("click", aitetris.do)
 <div style="width: 100%; height: 100%;"><textarea autocomplete="off" id="kw_console2"></textarea></div>
 <p><!-- Brython 程式執行的結果, 都以 brython_div1 作為切入位置 --></p>
 <div id="brython_div2"></div>
-<!-- editor2 結束 --><hr/><br />About << <a href='About.html'>Previous</a> </div>
+<!-- editor2 結束 --><hr/><br />W13 << <a href='W13.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
