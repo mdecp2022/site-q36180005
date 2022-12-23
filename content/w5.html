@@ -142,7 +142,26 @@ img.add_border {
           
         </header>
     <div id="tipue_search_content">cp抽點 << <a href='cp抽點.html'>Previous</a> <a href='w6.html'>Next</a> >> w6<br /><h1>w5</h1>
-<br />cp抽點 << <a href='cp抽點.html'>Previous</a> <a href='w6.html'>Next</a> >> w6</div>
+<div style="box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Web', sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+<div>第五周重要的知識:</div>
+<div></div>
+<div>雲端動態網站平台分為 Replit 與 stud.cycu.org, 而近端則可使用 localhost 加上 SSH 設定執行動態網站, 改版後以 acp.bat 推送至 Github 靜態網頁倉儲.</div>
+<div>近端使用 localhost 執行個人倉儲動態網站時 (啟用可攜 Python 時, 確認已經設定 GIT_SSH 變數, 且與 plink.exe 對應):</div>
+<ol>
+<li>利用 git config --global http.proxy "<a rel="noreferrer noopener" tabindex="-1" target="_blank" title="http://p42.cycu.org:3128%22">http://p42.cycu.org:3128",</a> 設定讓 git 指令使用 Proxy 連線到 github.com</li>
+<li>利用 git config --global user.name "使用者 Github 帳號", 設定 git 提交所使用的 user.name</li>
+<li>利用 git config --global user.email "使用者 Github 帳號設定時所填入的 email", 設定提交者身分 (一定要設定正確, 否則提交無法正確註記)</li>
+<li>利用 puttygen.exe 建立 public key 與 private key, public key 送到 Github, private key 存入 USB 隨身碟.</li>
+<li>利用 putty.exe 設定 session (名稱可自取), 代表以 ssh 連線至 github.com, 設定 http 協定之 Proxy, 給定 private key 位置, 且設定完成之 .reg 從 registry 匯出存入 USB 隨身碟, 之後可以直接雙點擊後完成 putty session 的登錄檔設定. (session 設定完成要 connect 確定可以連線)</li>
+<li>使用 git clone --recurse-submodules git@your_github_session:mdecp2022/site-your_github_account.git 在 site-your_github_account 目錄中取下個人倉儲資料.</li>
+<li>cd 至個人倉儲目錄, 以 cms 執行動態網站, 並以 init.py 中的 site_title 作為網站標題, dynamic_port 以及 static_port 作為動態網站與靜態模擬網站的埠號.</li>
+<li>學習如何在 <a href="https://localhost:9443" rel="noreferrer noopener" tabindex="-1" target="_blank" title="https://localhost:9443/">https://localhost:9443</a> 或其他設定在 init.py 中的 dynamic_port 埠號網站中編輯網頁內容.</li>
+<li>完成動態網站的階段性編輯後, 以 generate_pages 將網站轉為靜態資料後, 在倉儲根目錄中執行 acp "提交說明字串" 後, 即可憑藉 SSH 的設定, 將改版內容提交推送到 Github 個人倉儲區.</li>
+</ol>
+<div>w5 將一步步讓學員完成上述實習內容後, 再設法運用 stud.cycu.org 上的動態網站進行改版.</div>
+<div></div>
+<div>另外, 在個人倉儲對應網站上執行的 Brython 程式練習後, 可以將程式存入個人 Github 帳號下的 Gist 區後, 導入個人的動態或靜態網頁中執行.</div>
+</div><br />cp抽點 << <a href='cp抽點.html'>Previous</a> <a href='w6.html'>Next</a> >> w6</div>
         
     <!-- footer -->
       <div class="container">
