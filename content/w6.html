@@ -142,7 +142,9 @@ img.add_border {
           
         </header>
     <div id="tipue_search_content">w5 << <a href='w5.html'>Previous</a> <a href='w7.html'>Next</a> >> w7<br /><h1>w6</h1>
-<p><a href="https://mdecp2022.github.io/site-q36180005/content/Brython.html?src=https://gist.githubusercontent.com/q36180005/2e6a1f80e2de12a750e2e5e29186db1c/raw/997e3dd5f9bb52c6660eba469c12e9258848eb51/w6_%25E6%2593%25B7%25E5%258F%2596%25E5%2580%258B%25E4%25BA%25BA%25E9%259D%259C%25E6%2585%258B%25E7%25B6%25B2%25E9%25A0%2581">w6作業</a></p><br />w5 << <a href='w5.html'>Previous</a> <a href='w7.html'>Next</a> >> w7</div>
+<p><a href="https://mdecp2022.github.io/site-q36180005/content/Brython.html?src=https://gist.githubusercontent.com/q36180005/2e6a1f80e2de12a750e2e5e29186db1c/raw/997e3dd5f9bb52c6660eba469c12e9258848eb51/w6_%25E6%2593%25B7%25E5%258F%2596%25E5%2580%258B%25E4%25BA%25BA%25E9%259D%259C%25E6%2585%258B%25E7%25B6%25B2%25E9%25A0%2581">w6作業</a></p>
+<p>心得:from browser import document, html<br/><br/>brython_div1 = document["brython_div1"]<br/>"""<br/>brython_div1 &lt;= html.BUTTON("hello")<br/>brython_div1 &lt;= html.BR()<br/>brython_div1 &lt;= html.A("google", href="https://google.com")<br/>"""<br/><br/>url = "https://mde.tw/studlist/2022fall/1a.txt"<br/>data = open(url).read().split("\n")<br/>mdecp2022 = "https://mdecp2022.github.io/site-"<br/>data = data[1:-1]<br/>for i in data:<br/>    stud = i.split("\t")<br/>    stud_num = stud[0]<br/>    github_acc = stud[1]<br/>    #print(stud_num, github_acc)<br/>    if github_acc == "":<br/>        github_acc = stud_num<br/>    site = mdecp2022 + github_acc<br/>    link = html.A(stud_num, href=site)<br/>    brython_div1 &lt;= link<br/>    brython_div1 &lt;= html.BR()</p>
+<p>字串第六行後面的1a.txt是把1a所有學員的靜態網站連結都整理再一起,如果改成1b,那就是把1b所有學員的靜態網站連結都整理出來,想要看哪一個學員的靜態網站,只要點連結進去就能檢視</p><br />w5 << <a href='w5.html'>Previous</a> <a href='w7.html'>Next</a> >> w7</div>
         
     <!-- footer -->
       <div class="container">
