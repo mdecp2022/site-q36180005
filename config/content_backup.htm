@@ -32,8 +32,26 @@
 <p><a href="https://mdecp2022.github.io/site-q36180005/content/Brython.html?src=https://gist.githubusercontent.com/q36180005/2e6a1f80e2de12a750e2e5e29186db1c/raw/997e3dd5f9bb52c6660eba469c12e9258848eb51/w6_%25E6%2593%25B7%25E5%258F%2596%25E5%2580%258B%25E4%25BA%25BA%25E9%259D%259C%25E6%2585%258B%25E7%25B6%25B2%25E9%25A0%2581">w6作業</a></p>
 <p>心得:from browser import document, html<br/><br/>brython_div1 = document["brython_div1"]<br/>"""<br/>brython_div1 &lt;= html.BUTTON("hello")<br/>brython_div1 &lt;= html.BR()<br/>brython_div1 &lt;= html.A("google", href="https://google.com")<br/>"""<br/><br/>url = "https://mde.tw/studlist/2022fall/1a.txt"<br/>data = open(url).read().split("\n")<br/>mdecp2022 = "https://mdecp2022.github.io/site-"<br/>data = data[1:-1]<br/>for i in data:<br/>    stud = i.split("\t")<br/>    stud_num = stud[0]<br/>    github_acc = stud[1]<br/>    #print(stud_num, github_acc)<br/>    if github_acc == "":<br/>        github_acc = stud_num<br/>    site = mdecp2022 + github_acc<br/>    link = html.A(stud_num, href=site)<br/>    brython_div1 &lt;= link<br/>    brython_div1 &lt;= html.BR()</p>
 <p>字串第六行後面的1a.txt是把1a所有學員的靜態網站連結都整理再一起,如果改成1b,那就是把1b所有學員的靜態網站連結都整理出來,想要看哪一個學員的靜態網站,只要點連結進去就能檢視</p><h2>w7</h2>
-<h2>w8</h2>
-<h2>w9</h2>
+<div>
+<div>重要的:</div>
+<div><br/>
+<div>stud 伺服器與 cmsimde 子模組更新</div>
+<div data-tid="messageBodyContainer">
+<div data-tid="messageBodyContent">
+<div>
+<div>
+<div><a href="https://stud.cycu.org:8000" title="https://stud.cycu.org:8000/">https://stud.cycu.org:8000</a> 是一個建立在工作站室電腦上的一個動態網站<span>，</span>透過在 Ubuntu 伺服器上的一個 demo 帳號與兩個 ports (9000 及 8000) 完成<span>，</span>2022 Fall 每位修課學員應該都收到一封信<span>，</span>告知在這台 stud.cycu.org 伺服器上的獨一帳號密碼與 ports (<a href="https://nfuedu-my.sharepoint.com/:x:/g/personal/yen_nfu_edu_tw/ET-JZNPkNtZDhFiLt8BGZZ4BFMVV1HE73WQt1V44y6vnCQ?e=S1eVbz" title="https://nfuedu-my.sharepoint.com/:x:/g/personal/yen_nfu_edu_tw/et-jznpkntzdhfilt8bgzz4bfmvv1he73wqt1v44y6vncq?e=s1evbz">stud.cycu.org port 分配表)</a> <span>，</span>其中 9xxx 用於內部而 8xxx 則用於外部.</div>
+<div>stud.cycu.org 是用來取代 Replit 雲端應用程式服務<span>，</span>設定完成後<span>，</span>每位學員都能直接在瀏覽器中修改動態與 Github Pages 靜態網站的內容<span>，</span>也能直接將各種練習編寫的 Brython 程式存在個人的 Gist<span>，</span>然後導入動態或靜態網站中執行.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div></div>
+</div><h2>w8</h2>
+<p>利用putty.exe遠端登入到stud.cycu.org</p>
+<p>教學影片連結:<a href="https://nfuedu.sharepoint.com/sites/cp20222/_layouts/15/stream.aspx?id=%2Fsites%2Fcp20222%2FShared%20Documents%2Fw8%2Dw9%2FRecordings%2F1%2E%20%E5%88%A9%E7%94%A8%20putty%2Eexe%20%E9%81%A0%E7%AB%AF%E7%99%BB%E5%85%A5%E5%88%B0%20stud%2Ecycu%2Eorg%2Emp4&amp;referrer=Teams%2ETEAMS%2DWEB&amp;referrerScenario=teamsSdk%2DopenFilePreview">點我進入</a></p>
+<div><a href="https://exam.cycu.org/" rel="noreferrer noopener" tabindex="-1" target="_blank" title="https://exam.cycu.org/">https://exam.cycu.org/</a> 這個連結是考試的網站<span>，網站名稱叫做TecExam</span></div><h2>w9</h2>
 <h2>w10</h2>
 <h2>w11</h2>
 <h2>w12</h2>
